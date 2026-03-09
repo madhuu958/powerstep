@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+}
+
+@keyframes gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.bg-futuristic {
+  background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 50%, #7dd3fc 100%);
+  background-size: 400% 400%;
+  animation: gradient-flow 15s ease infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-overlay {
+  background-image: 
+    linear-gradient(rgba(2, 132, 199, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(2, 132, 199, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.glow-text-blue {
+  color: #0c4a6e;
+  text-shadow: 0 0 10px rgba(14, 165, 233, 0.2);
+}
+
+body {
+  font-family: var(--font-sans);
+  @apply bg-sky-50 text-black;
+}
+
+.glass-card {
+  @apply bg-white/60 backdrop-blur-md border border-sky-200/50 shadow-sm;
+}
+
+.tech-border {
+  @apply border border-black/10;
+}

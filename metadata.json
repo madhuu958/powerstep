@@ -1,0 +1,5 @@
+{
+  "name": "PowerStep: Smart Energy Harvesting Dashboard",
+  "description": "An intelligent dashboard for monitoring and analyzing energy generated from human footsteps using piezoelectric sensors, featuring real-time IoT visualization and AI-driven predictive analytics.",
+  "requestFramePermissions": []
+}
